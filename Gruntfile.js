@@ -42,7 +42,7 @@ module.exports = function (grunt) {
     'build:parent',
     'rsync:deploy_parent',
     'build:child:expanded',
-    'rsync:init_deploy_child'
+    'ftpush:init_deploy_child'
   ]);
 
   // ----- Grunt reinit ----- //
@@ -59,7 +59,7 @@ module.exports = function (grunt) {
     'copy:bower_libs',
     // Build child theme
     'build:child:expanded',
-    'rsync:init_deploy_child'
+    'ftpush:init_deploy_child'
   ]);
 
   // ----- Grunt develop ----- //
@@ -74,7 +74,7 @@ module.exports = function (grunt) {
   grunt.registerTask('deploy', 'Deploy compressed child theme to live server.', [
     'clean:child',
     'build:child:compressed',
-	'rsync:deploy_child'
+	'ftpush:deploy_child'
   ]);
 
   // ----- Grunt build ----- //
@@ -128,7 +128,7 @@ module.exports = function (grunt) {
           'newer:copy:php_child',
           'delete_sync:php_templates',
           'delete_sync:php_includes',
-          'processhtml:expanded',
+         // 'processhtml:expanded',
           // Copy Wp child css
           'copy:css_child',
           // Process images
