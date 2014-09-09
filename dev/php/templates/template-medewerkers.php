@@ -7,10 +7,11 @@ Template Name: Medewerkers
 <?php get_header(); ?>
 
 	<section class="content">
-		<div class="u-gridContainer">
+		<div class="u-gridContainer medewerker">
+			<h2> <?php the_title(); ?> </h2>
 			<?php
 				$args = array(
-					'post_type' => 'merk',
+					'post_type' => 'medewerker',
 					'nopaging' => true
 				);
 				$aanbiedingen = new WP_Query( $args );
@@ -18,7 +19,7 @@ Template Name: Medewerkers
 					$counter = 1;
 
 					while( $aanbiedingen->have_posts() ) {
-						$numColumns = 4;
+						$numColumns = 3;
 						if($counter % $numColumns == 1) {
 							echo '<div class="u-gridRow">';
 						}	
@@ -26,7 +27,7 @@ Template Name: Medewerkers
 						$aanbiedingen->the_post();
 						?>
 
-						<div class="u-gridCol3">
+						<div class="u-gridCol4">
 							<?php
 							$image = get_field('medewerker_afbeelding');
 							 
@@ -36,9 +37,7 @@ Template Name: Medewerkers
 							 
 							<?php endif; ?>			
 												
-				        	<h3><?php echo get_field('medewerker_naam');  ?></h3>
-
-				        	<p><?php echo get_field('medewerker_functie'); ?></p> 
+				        	<h3><?php echo the_title();?> <span class="super">(<?php echo get_field('medewerker_functie'); ?>) </span></h3> 
 
 				            <p><?php echo get_field('medewerker_beschrijving'); ?></p>       
 				        </div>
@@ -53,12 +52,10 @@ Template Name: Medewerkers
 					}
 				}
 				else {
-					echo '<p>Er zijn momenteel geen werknemers</p>';
+					echo '<p>Er zijn momenteel geen medewerkers</p>';
 				}
 			?>
 		</div>
-
-		<?php get_sidebar(); ?>
 
 	</section>
 

@@ -35,7 +35,7 @@ Template Name: Homepage
 		        </div>
 		    </div>
 
-		    <div class="contact-us"> <a class="button" href="/contact"> Neem contact op </a></div>
+		    <div class="button-container"> <a class="button" href="/contact"> Neem contact op </a></div>
 
 		    <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 		</div>
