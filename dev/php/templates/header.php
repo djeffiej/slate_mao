@@ -3,6 +3,8 @@
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+  
+
   <head prefix="og: http://ogp.me/ns/website#"><!-- Prefix is used to declare facebook opengraph namespace for websites -->
     <!-- Charset -->
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -48,7 +50,7 @@
                 <div class="u-gridRow">                 
                     <div class="phonenumber u-gridCol6">
                         <div class="phonenumber-info">
-                            <p>Tel: 010-2733962</p>
+                            <p><svg class="Icon Icon--inline" viewBox="0 0 128 128"><use xlink:href="#icon-phone"></use></svg>010-2733962</p>
                         </div> 
                     </div>                  
                 </div>
@@ -62,7 +64,7 @@
                     <div class="u-gridContainer">
                         <div class="u-gridRow">
                             <div class="u-gridCol3">
-                                <figure> <img id="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/ico/logo.svg" alt="logo" /></figure>
+                                <figure> <a href="/"> <img id="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/ico/logo.svg" alt="logo" /> </a> </figure></figure>
                             </div>
                             <div class="u-gridCol9">
                                 <div class="Nav-toggle">

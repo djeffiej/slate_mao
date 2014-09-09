@@ -23,12 +23,14 @@ body {
 
 p {
   font-size: rem($t-fontSize);
+  line-height: 1.7;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
   font-family: $t-headerFontFamily;
   font-weight: bold;
+  margin: 0px;
 }
 
 h1, %u-textH1 {
@@ -40,7 +42,7 @@ h2, %u-textH2 {
 }
 
 h3, %u-textH3 {
-  font-size: rem(30px);
+  font-size: 1.3rem;
   color: $c-red;
   text-transform: uppercase;
 }
@@ -55,6 +57,11 @@ h5, %u-textH5 {
 
 h6, %u-textH6 {
   font-size: rem(16px);
+}
+
+.super {
+  vertical-align: super;
+  font-size: 50%;
 }
 
 ul {
@@ -75,19 +82,6 @@ a {
   }
 }
 
-a.button {
-  color: $c-black;
-  text-transform: uppercase;
-  border: 1px solid $c-light-grey;
-  border-radius: 3px;
-  padding: 16px 27px;
-}
-
-a.button {
-  text-decoration: none;
-}
-
-
 
 strong {
   font-weight: bold;
@@ -107,4 +101,17 @@ small {
 
 img {
   max-width: 100%;
+}
+
+
+.content ul {
+  list-style-type: square;
+  list-style-position: inside;
+  list-style-image: none;
+  padding: 0 10px 0 10px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
 }

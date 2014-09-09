@@ -27,7 +27,7 @@ module.exports = {
     src: 'dist/child',
     dest: '/wp-content/themes/slate-<%= package.version %>_mao',
     simple: true,
-    useList: false
+    useList: true
   },
 
   // ----- Mirror parent theme to server ----- //

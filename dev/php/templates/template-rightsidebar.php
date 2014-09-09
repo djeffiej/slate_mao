@@ -1,15 +1,12 @@
 <?php
 /*
-Template Name: Page w/ sidebar on left
+Template Name: Page w/ sidebar on right
 */
 ?>
 
 <?php get_header(); ?>
 	<section class="content right-sidebar">
 		<div class="u-gridContainer">
-  		  	<div id="sidebar" class="u-gridCol4">
- 				<?php get_sidebar(); ?> 
-	        </div>
 	        <div class="u-gridCol8">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<article class="Content" id="post-<?php the_ID(); ?>">
@@ -20,6 +17,10 @@ Template Name: Page w/ sidebar on left
 						</div>
 					</article>
 				<?php endwhile; endif; ?>       
+	        </div>
+
+  		  	<div id="sidebar" class="u-gridCol4">
+ 				<?php get_sidebar(); ?> 
 	        </div>
 		</div>
 	</section>	

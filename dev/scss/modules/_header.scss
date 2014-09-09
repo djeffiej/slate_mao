@@ -6,7 +6,11 @@
 // *************************************
 
 header {
-  height: 490px;
+  height: 200px;
+
+  svg {
+    fill: white;
+  }
 }
 
 // ----- Top menu ----- //
@@ -26,9 +30,17 @@ header {
   }
 }
 
-// ----- Header picture ----- //
+// ----- Header picture & carousel single page ----- //
 
-.Menu-carousel {
+.Carousel-content {
+  display: none;
+}
+
+.home header {
+  height: 490px;
+}
+
+.home .Menu-carousel {
   background-image: url("../img/header.jpg");
   background-size: cover;
   background-repeat: none;
@@ -50,6 +62,8 @@ header {
     }
   }
 }
+
+
 
 
 

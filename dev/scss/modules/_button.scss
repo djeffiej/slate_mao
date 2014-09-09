@@ -5,56 +5,28 @@
 //
 // *************************************
 
-.Button {
-  display: inline-block;
-  font-weight: bold;
-  padding: rem(10px) rem(5px);
-  &:hover {
-    text-decoration: none;
+a.button {
+  color: $c-black;
+  text-transform: uppercase;
+  border: 1px solid $c-light-grey;
+  border-radius: 3px;
+  padding: 16px 27px;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+
+.button-container {
+  text-align: center;
+}
+
+
+
+#sidebar {
+  .button-container {
+    margin: 35px 0 20px 0;
+    text-align: left;
   }
 }
-
-// -------------------------------------
-// Module specific variables
-// -------------------------------------
-
-// -variable
-
-// -------------------------------------
-// Modifiers
-// -------------------------------------
-
-// ----- Default ----- //
-
-.Button--default {
-  color: $c-white;
-  fill: $c-white;
-}
-
-// ----- Brand ----- //
-
-.Button--brand {
-  color: $c-white;
-  fill: $c-white;
-  background: $c-blue;
-}
-
-// -------------------------------------
-// States
-// -------------------------------------
-
-// .is-module-state
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
-// ----- Submodule ----- //
-
-// .Module-subModule
