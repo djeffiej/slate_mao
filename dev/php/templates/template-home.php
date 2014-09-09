@@ -13,7 +13,7 @@ Template Name: Homepage
 
 		    <div class="u-gridRow">
 		        <div class="u-gridCol4">
-		        	<h3> De Hedendaagse Klant </h3>
+		        	<h3> De Hedendaagse Klant</h3>
 		            <p> 
 		            	De hedendaagse klant bepaalt zijn voorkeur voor een bedrijf of organisatie ook op basis van het imago. 
 		            	Naast alle kwaliteiten van de producten of de diensten is de indruk die men van de mensen heeft erg belangrijk.  

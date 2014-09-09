@@ -11,8 +11,11 @@
 			<div class="u-gridContainer">
 				<!-- Copyright info -->
 				<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website & SEO door 
-						<a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a>
+						<a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a>asd
 				</p>
+				<div id="footer-rss">
+					<img id="rss" src="<?php echo get_stylesheet_directory_uri(); ?>/ico/rss.svg" alt="rss" />
+				</div>
 			</div>
 		</div>
 	</footer>
