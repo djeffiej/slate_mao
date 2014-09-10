@@ -12,6 +12,7 @@
 
 	p {
 		font-weight: 600;
+		float: left;
 	}
 
 	h4 {
@@ -31,6 +32,14 @@
 	}
 }
 
+.footer-rss {
+		float: right;
+		margin-top: 10px;
+		:hover {
+			box-shadow: 3px;
+		}
+}
+
 .Socket {
 	background-color: $c-red;
 
@@ -44,6 +53,7 @@
 	}
 }
 
+a
 
 // -------------------------------------
 // select
@@ -61,7 +71,7 @@ select {
 
 // RESPONSIVE FOOTER
 .Footer-inner .widget {
-	@include span-columns(4);
+	@include span-columns(3);
 	@media screen and(max-width: 980px){
 		@include span-columns(12);
 	}

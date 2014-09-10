@@ -3,8 +3,11 @@
 Template Name: Page w/ sidebar on right
 */
 ?>
-
+<div class="home">
 <?php get_header(); ?>
+</div>
+
+
 	<section class="content right-sidebar">
 		<div class="u-gridContainer">
 	        <div class="u-gridCol8">

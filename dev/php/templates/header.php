@@ -22,8 +22,8 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/ico/apple-touch-icon.png">
 
     <!-- build:remove:expanded -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
@@ -82,8 +82,8 @@
             </div>
             <div class="Carousel-content">
                 <h2> Mao Administratie </h2>
-                <p> Symphatie en waardering spelen vaak een  </p>
-                <p> doorslaggevende rol in het doen van zaken</p>
+                <p> Sympathie en waardering spelen vaak een  </p>
+                <p> doorslaggevende rol in het doen van zaken.</p>
             </div>
         </section>
         <div id="Sticky-anchor"> </div>
