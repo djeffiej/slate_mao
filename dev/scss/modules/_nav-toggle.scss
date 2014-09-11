@@ -6,12 +6,25 @@
 // *************************************
 
 .Navigation-menuToggle  {
-  display: block;
+display: block;
+float: right;
+background-color: blue;
+top: 20px;
+position: relative;
   @media all and (min-width: 980px) {
     display: none;
+    position: static;
+    background-color: blue;
+
   }
 }
 
+@media all and (min-width: 980px) {
+  .Navigation {
+    position: absolute;
+    bottom: 9px; 
+  } 
+}
 .Navigation-menuToggle {
 	//	background-color: white;
 	cursor: pointer;
@@ -23,9 +36,76 @@
 	}
 }
 
+@media all and (max-width: 980px) {
+
+    .Navigation {
+      position: static;
+    }
+
+    .Navigation-listItem {
+      background: white;
+      margin: 0;
+      position: static;
+      display: block;
+      padding: 5px;
+    }
+
+    .Navigation-link {
+      width: 100%;
+      background: white;
+      margin: 0;
+      position: static;
+    }
+
+    .Navigation-wrapper {
+        height: auto;
+    }
+
+    .home .Menu-carousel {
+      height: auto;
+    }
+
+    .home .Menu-carousel .Carousel-content {
+      margin-bottom: 20px;
+    }
+
+    .Navigation-menuToggle {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+
+      background-color: white;
+      border: 2px solid black;
+    }
+
+    #Navigation .u-gridContainer {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    #logo {
+      margin-left: 15px;
+      width: 200px;
+    }
+
+    .Navigation-menuToggle .Icon--inline {
+      height: 2em;
+      width: 2em;
+      margin-top: 12px;
+      fill: black;
+      border-radius: 4px;
+      
+
+
+    }
+}
 
 #js-navCollapseTarget {
   @media all and (max-width: 980px) {
     display: none;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    background: white;
+    width: 100%;
   }
 }

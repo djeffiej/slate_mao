@@ -35,12 +35,12 @@ function sticky_relocate() {
     $('.sticky').removeClass('stick');
     $('.sticky #logo').css('width', '200px');
   } else if (difference >= 0 && difference <= 100) {
-    var w = 200 - (0.6 * difference);
+    var w = 200 - (0.0 * difference);
     $('.sticky').addClass('stick');
     $('.sticky #logo').css('width', w + 'px');
   } else {
     $('.sticky').addClass('stick');
-    $('.sticky #logo').css('width', '110px');
+    $('.sticky #logo').css('width', '200px');
 
   }
 
