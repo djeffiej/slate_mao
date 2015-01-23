@@ -12,7 +12,7 @@ Template Name: App page
 			<div class="u-gridContainer">
 				<h2><?php the_title(); ?></h2>
 				<aside class="u-gridCol4">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/screenshot.png" class="App-iphone" />
+					<img src="/files/2014/09/app.png" class="App-iphone" />
 				</aside>
 				<article class="Content-article u-gridCol8" id="post-<?php the_ID(); ?>">
 					<?php // the_content(); ?>
@@ -20,11 +20,11 @@ Template Name: App page
 
 					Voor Apple iPhone gebruikers: scan de QR-code of surf naar de website. 
 
-					<a href="#">Download de app hier</a>
+					<a href="https://play.google.com/store/apps/details?id=com.wMaoAdministratie">Download de app hier</a>
 
 
 
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/qr_code.png" />
+					<img width="200"src="<?php echo get_stylesheet_directory_uri(); ?>/img/mao_qr_code.jpg" />
 
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 				</article>

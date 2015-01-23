@@ -30,6 +30,10 @@
 	svg {
 		fill: white;
 	}
+
+	a {
+		color: white;
+	}
 }
 
 .footer-rss {
@@ -61,8 +65,17 @@ a
 
 select {
 	color: $c-black;
+
+	.menu {
+		width: 200px;
+		color: black;
+	}
 }
 
+.menu-0 {
+	width: 200px;
+	color: $c-black;
+}
 
 
 
